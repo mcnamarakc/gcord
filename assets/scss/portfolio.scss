@@ -1,0 +1,80 @@
+// body {
+//     --l: calc(100vw/var(--n-cols));
+//     --hl: calc(.5*var(--l));
+//     --ri: calc(.5*1.73205*var(--l));
+//     box-sizing: border-box;
+//     display: grid;
+//     place-content: center;
+//     grid-template: repeat(var(--n-rows), var(--l))/repeat(var(--n-cols), var(--ri));
+//     grid-gap: var(--hl) 0;
+//     overflow: hidden;
+//     margin: 0;
+//     padding: var(--hl) 0;
+//     height: 100vh;
+//     background: #262626;
+//     filter: drop-shadow(2px 2px 5px);
+// }
+
+// // @media (orientation: landscape)
+// // body {
+// //     --l: calc(100vh/(var(--n-rows) + 3));
+// // }
+
+// .hex-cell {
+//     overflow: hidden;
+//     grid-column-end: span 2;
+//     margin: calc(-1*var(--hl)) 0;
+//     transform: scale(0.95);
+//     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+// }
+
+
+// div {
+//     display: block;
+// }
+
+// img {
+//     --hl: 0;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     transform: scale(calc(1 + .2*var(--hl)));
+//     filter: brightness(calc(.6*(1 + var(--hl))));
+//     transition: .7s;
+// }
+
+.hex {
+    float: left;
+    margin-left: 3px;
+    margin-bottom: -26px;
+    clip-path: polygon(49% 0, 92% 26%, 92% 74%, 49% 100%, 6% 74%, 6% 25%);
+    background-image: url(../images/G-Cord_Live_@_Rotation_01-04-20.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+
+    // background: pink;
+}
+// .hex .top {
+//     width: 0;
+//     border-bottom: 30px solid #6C6;
+//     border-left: 52px solid transparent;
+//     border-right: 52px solid transparent;
+// }
+// .hex .middle {
+//     width: 104px;
+//     height: 60px;
+//     background: #6C6;
+// }
+// .hex .bottom {
+//     width: 0;
+//     border-top: 30px solid #6C6;
+//     border-left: 52px solid transparent;
+//     border-right: 52px solid transparent;
+// }
+.hex-row {
+    clear: left;
+}
+.hex-row.even {
+    margin-left: 100px;
+}
