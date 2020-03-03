@@ -1,24 +1,17 @@
-// body {
-//     --l: calc(100vw/var(--n-cols));
-//     --hl: calc(.5*var(--l));
-//     --ri: calc(.5*1.73205*var(--l));
-//     box-sizing: border-box;
-//     display: grid;
-//     place-content: center;
-//     grid-template: repeat(var(--n-rows), var(--l))/repeat(var(--n-cols), var(--ri));
-//     grid-gap: var(--hl) 0;
-//     overflow: hidden;
-//     margin: 0;
-//     padding: var(--hl) 0;
-//     height: 100vh;
-//     background: #262626;
-//     filter: drop-shadow(2px 2px 5px);
-// }
+body {
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    grid-template: repeat(var(--n-rows), var(--l))/repeat(var(--n-cols), var(--ri));
+    grid-gap: var(--hl) 0;
+    overflow: hidden;
+    margin: 0;
+    padding: var(--hl) 0;
+    height: 100vh;
+    background: #262626;
+    filter: drop-shadow(2px 2px 5px);
+}
 
-// // @media (orientation: landscape)
-// // body {
-// //     --l: calc(100vh/(var(--n-rows) + 3));
-// // }
 
 // .hex-cell {
 //     overflow: hidden;
@@ -43,38 +36,99 @@
 //     transition: .7s;
 // }
 
-.hex {
+#hex-1{
     float: left;
-    margin-left: 3px;
-    margin-bottom: -26px;
+    margin-left: -15px;
+    margin-bottom: -20px;
     clip-path: polygon(49% 0, 92% 26%, 92% 74%, 49% 100%, 6% 74%, 6% 25%);
     background-image: url(../images/G-Cord_Live_@_Rotation_01-04-20.jpg);
     background-size: cover;
     height: 200px;
     width: 200px;
-
-    // background: pink;
 }
-// .hex .top {
-//     width: 0;
-//     border-bottom: 30px solid #6C6;
-//     border-left: 52px solid transparent;
-//     border-right: 52px solid transparent;
-// }
-// .hex .middle {
-//     width: 104px;
-//     height: 60px;
-//     background: #6C6;
-// }
-// .hex .bottom {
-//     width: 0;
-//     border-top: 30px solid #6C6;
-//     border-left: 52px solid transparent;
-//     border-right: 52px solid transparent;
-// }
+
+#hex-2{
+    float: left;
+    margin-left: -15px;
+    margin-bottom: -20px;
+    clip-path: polygon(49% 0, 92% 26%, 92% 74%, 49% 100%, 6% 74%, 6% 25%);
+    background-image: url(../images/G-Cord_Live_@_Tommys_Pub.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+
+#hex-3{
+    float: left;
+    margin-left: -15px;
+    margin-bottom: -20px;
+    clip-path: polygon(49% 0, 92% 26%, 92% 74%, 49% 100%, 6% 74%, 6% 25%);
+    background-image: url(../images/Let_the_Beat_Control_Your_Booty.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+
+#hex-4{
+    float: left;
+    margin-left: -15px;
+    margin-bottom: -20px;
+    clip-path: polygon(49% 0, 92% 26%, 92% 74%, 49% 100%, 6% 74%, 6% 25%);
+    background-image: url(../images/lo-fi_Daydream.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+
+#hex-5{
+    float: left;
+    margin-left: -15px;
+    margin-bottom: -20px;
+    clip-path: polygon(49% 0, 92% 26%, 92% 74%, 49% 100%, 6% 74%, 6% 25%);
+    background-image: url(../images/LUVdub.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+
+#hex-6{
+    float: left;
+    margin-left: -15px;
+    margin-bottom: -20px;
+    clip-path: polygon(49% 0, 92% 26%, 92% 74%, 49% 100%, 6% 74%, 6% 25%);
+    background-image: url(../images/BassFace&Chill.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+
+#hex-7{
+    float: left;
+    margin-left: -15px;
+    margin-bottom: -20px;
+    clip-path: polygon(49% 0, 92% 26%, 92% 74%, 49% 100%, 6% 74%, 6% 25%);
+    background-image: url(../images/NightOfJazz.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+#hex-8{
+    float: left;
+    margin-left: -15px;
+    margin-bottom: -20px;
+    clip-path: polygon(49% 0, 92% 26%, 92% 74%, 49% 100%, 6% 74%, 6% 25%);
+    background-image: url(../images/YouGot2StopIt.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+
 .hex-row {
     clear: left;
+    margin-bottom: -10px;
+    margin-top: -10px;
 }
 .hex-row.even {
-    margin-left: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
